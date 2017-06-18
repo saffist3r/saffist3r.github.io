@@ -1,0 +1,7 @@
+safwene-ladhari.com [05/Mar/2016:04:46:45 -0500] 66.249.66.132 - - "GET /robots.txt HTTP/1.0" 302 208 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [05/Mar/2016:14:47:10 -0500] 41.225.49.162 - - "GET /css/color-schemes/dark/hot-pink.css HTTP/1.0" 200 3670 "http://safwene-ladhari.com/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36"
+safwene-ladhari.com [05/Mar/2016:14:47:20 -0500] 41.225.49.162 - - "GET /fonts/Banda/Banda_regular-webfont.woff HTTP/1.0" 200 38464 "http://safwene-ladhari.com/css/font-face.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36"
+safwene-ladhari.com [05/Mar/2016:17:46:22 -0500] 180.76.15.137 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+safwene-ladhari.com [05/Mar/2016:20:47:13 -0500] 66.249.66.28 - - "GET /robots.txt HTTP/1.0" 302 208 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [05/Mar/2016:21:46:11 -0500] 66.249.66.128 - - "GET /robots.txt HTTP/1.0" 302 208 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [05/Mar/2016:21:46:29 -0500] 66.249.66.22 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"

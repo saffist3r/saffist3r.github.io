@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]>         
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]>         
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]><!--> 
+         <html class="no-js">
+            <!--<![endif]-->
+            <head>
+               <meta charset="utf-8">
+               <title>Saffist3r's blog</title>
+               <meta name="description" content="">
+               <meta name="author" content="Ilya-Dorman" />
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+               <link rel="stylesheet" href="css/normalize.css">
+               <link rel="stylesheet" href="css/font-face.css">
+               <link rel="stylesheet" href="css/color-schemes/dark/hot-pink.css">
+               <link rel="stylesheet" href="css/typography.css">
+               <link rel="stylesheet" href="css/font-awesome.css">
+               <link rel="stylesheet" href="css/main.css">
+               <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-auth.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-messaging.js"></script>
+               <script>
+                  document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';
+               </script><!-- Responsive images -->
+            </head>
+            <body>
+               <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+               <script>
+                  // Initialize Firebase
+                  var config = {
+                    apiKey: "AIzaSyAkiG5KgbfPK_NYYMAlshRL3tvlgpuorxk",
+                    authDomain: "miniprojet-bb156.firebaseapp.com",
+                    databaseURL: "https://miniprojet-bb156.firebaseio.com",
+                    projectId: "miniprojet-bb156",
+                    storageBucket: "miniprojet-bb156.appspot.com",
+                    messagingSenderId: "958042884408"
+                  };
+                  firebase.initializeApp(config);
+                  // Get a reference to the database service
+                  var database = firebase.database().ref().child('status');
+                  var obj;     
+                  
+               </script>
+               <!--[if lt IE 7]>
+               <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+               <![endif]-->
+               <!-- Add your site or application content here -->
+               <nav>
+                  <div class="top-ribbon"></div>
+                  <ul class="nav-font clearfix">
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                  </ul>
+               </nav>
+               <div class="sparator"></div>
+               <header class="site-header">
+                  <h1 class="title title-font">Hey,i'm Saff</h1>
+                  <p class="tagline tagline-font">
+                     Embedded Systems Engineer &amp; front-end newbie developer. I make funny robots,geeky apps and awesome
+                     projects.
+                  </p>
+               </header>
+               <div class="sparator"></div>
+               <div class="sparator"></div>
+               <section class="about-me">
+                  <article class="about about-font">
+                     <p>You can follow me on <a href="http://www.twitter.com/saffister">twitter <i class="icon-twitter"></i></a> and <a href="http://www.facebook.com/bitcohen">facebook <i class="icon-facebook-sign"></i></a>.</p>
+                     <p>I have some cool programming projects on <a href="http://www.github.com/saffist3r">github <i class="icon-github"></i></a>.</p>
+                     <p>Hey, I just met you and this is crazy, but here's my <a href="mailto:axelsaff@gmail.com">e-mail <i class="icon-envelope-alt"></i></a>, so write me, maybe. Or just call <a href="tel:558310160">55 831 016 <i class="icon-phone"></i></a> I'd love to talk :)</p>
+                  </article>
+                  <!--text-->
+                  <article class="twitter-stream">
+                     <header>
+                        <p>Status</p>
+                     </header>
+                     <div>On Desk :<script type="text/javascript">
+                     console.log(obj);
+                     if(obj==1)
+                        document.write("<IMG ALIGN='center' SRC='status/on.png'>'");
+                       // document.write("YES");
+                     else
+                        document.write("<IMG ALIGN='center' SRC='status/off.png'>");
+                        //document.write("YES");
+                     </script></div>
+                     <div>Up-Time : <div id="upt"> </div></div>
+                     <div>Cofee Ammount This Week :<pre id="cof"> </pre></div>
+                     <script type="text/javascript">   
+                    
+                     const hr= document.getElementById('upt'); 
+                     const cof= document.getElementById('cof');                  
+                          database.on('value', function(snapshot) {
+                          var newPost = snapshot.val();   
+                          obj = newPost.connected;  
+                           console.log(obj); 
+                           var date = new Date(null);
+						   date.setSeconds(newPost.uptime); // specify value for SECONDS here
+						   var result = date.toISOString().substr(11, 8);                 
+                          hr.innerText = result;
+                          cof.innerText = newPost.cofee;
+                         });
+
+                     </script>
+                     <hr>
+                     <header>
+                        <p><a href="">@saffister</a> on twitter <i class="icon-twitter"></i></p>
+                     </header>
+                     <div class="tweets meta-info-font">
+                        <a class="twitter-timeline" href="https://twitter.com/saffister" data-widget-id="677073526361333760"></a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                     </div>
+                  </article>
+                  <!--twitter-stream-->
+               </section>
+               <!--about-me-->
+               <div class="sparator"></div>
+               <div class="blog-excerpts-wrapper">
+                  <section id="from-my-blog" class="from-my-blog">
+                     <center>
+                        <h2 class="title-font">BLOG</h2>
+                     </center>
+                     <hr>
+                     <aside class="sidebar">
+                        <div class="blog-description about-font">
+                           <p>Here I write about anything that comes to my mind.</p>
+                        </div>
+                     </aside>
+                     <div class="blog-excerpts">
+                        <article class="post-excerpt">
+                           <header>
+                              <h2 class="entry-title-font"><a href="post.html">Me,life,standarts</a></h2>
+                              <p class="meta-info-font"><time datetime="2015-12-16T16:31:24+02:00">December 2015</time> &middot; This post is about <a href="#">me</a> and <a href="#">Reflections</a></p>
+                           </header>
+                           <div class="content">
+                              <p>I've always thought about my role in this life,why i'm alive,why i'm studying(to have a better life..yeah sure...),why i belong to a country..religion...society....these thought comes to my mind everytime
+                                 and every time i find no answer,maybe because that's life ? or maybe because that's how tutors explained life to us...<br>
+                                 I think life is beyond all of these,life is KNOWLEDGE the more you know the more you feel yourself alive the more you feel that you belong to this world...,life is about how to deal with new persons that comes to your life,life is about learning new habbits,cultures...
+                              </p>
+                           </div>
+                           <!--entry-->
+                           <footer>
+                              <p class="meta-info-font"><a href="#">Read more &rArr;</a></p>
+                           </footer>
+                        </article>
+                     </div>
+                     <!--blog-excerpt-->
+                  </section>
+                  <!--from-my-blog-->
+               </div>
+               <!--blog-excerpts-wrapper-->
+               <footer class="site-footer site-footer-font">
+                  <div class="sparator"></div>
+                  <div class="contact">
+                     <a href="mailto:axelsaff@gmail.com"><i class="icon-envelope-alt"></i> axelsaff@gmail.com</a> &middot;
+                     <a href="tel:55831016"><i class="icon-phone"></i> 55 831 016</a> &middot;
+                     <a href="http://www.twitter.com/saffister"><i class="icon-twitter"></i> @saffister</a> &middot;
+                     <a href="http://www.facebook.com/bitcohen"><i class="icon-facebook-sign"></i> /bitcohen</a>
+                  </div>
+                  <div class="copyright">Template Copyright &copy;. Made by <a href="#">Hexocat</a> with <i class="icon-heart"></i></div>
+               </footer>
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>		<script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+               <script src="js/plugins.js"></script>
+               <script src="js/main.js"></script>
+            </body>
+         </html>

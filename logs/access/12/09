@@ -1,0 +1,6 @@
+safwene-ladhari.com [09/Dec/2015:00:46:36 -0500] 66.249.64.202 - - "GET /favicon.ico HTTP/1.0" 302 208 "-" "Googlebot-Image/1.0"
+safwene-ladhari.com [09/Dec/2015:00:47:13 -0500] 66.249.64.202 - - "GET /img/03.jpg HTTP/1.0" 200 229436 "-" "Googlebot-Image/1.0"
+safwene-ladhari.com [09/Dec/2015:00:47:43 -0500] 66.249.64.202 - - "GET /post.html HTTP/1.0" 200 7623 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [09/Dec/2015:01:47:05 -0500] 66.249.64.13 - - "GET / HTTP/1.0" 200 6897 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [09/Dec/2015:11:48:19 -0500] 41.230.229.72 - - "GET /gallery-hex.html HTTP/1.0" 200 6248 "http://safwene-ladhari.com/?ckattempt=1" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0"
+safwene-ladhari.com [09/Dec/2015:12:46:59 -0500] 41.230.229.72 - - "GET /index.html HTTP/1.0" 200 6897 "http://safwene-ladhari.com/gallery-hex.html" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0"

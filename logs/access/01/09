@@ -1,0 +1,3 @@
+safwene-ladhari.com [09/Jan/2016:02:46:51 -0500] 180.76.15.26 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+safwene-ladhari.com [09/Jan/2016:18:47:15 -0500] 66.249.66.25 - - "GET /robots.txt HTTP/1.0" 302 208 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [09/Jan/2016:20:46:36 -0500] 180.76.15.160 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"

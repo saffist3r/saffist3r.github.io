@@ -1,0 +1,5 @@
+safwene-ladhari.com [01/Mar/2016:13:46:49 -0500] 66.249.64.13 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [01/Mar/2016:14:46:24 -0500] 180.76.15.17 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+safwene-ladhari.com [01/Mar/2016:19:47:11 -0500] 66.249.89.100 - - "GET /google66fffc33398fa26a.html HTTP/1.0" 200 53 "-" "Mozilla/5.0 (compatible; Google-Site-Verification/1.0)"
+safwene-ladhari.com [01/Mar/2016:22:47:17 -0500] 66.249.64.202 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [01/Mar/2016:22:48:06 -0500] 66.249.64.13 - - "GET /css/font-face.css HTTP/1.0" 200 6966 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"

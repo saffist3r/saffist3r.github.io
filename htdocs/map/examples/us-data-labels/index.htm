@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>sedki voyages</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+#container {
+    max-width: 400px; 
+    height: 360px; 
+    margin: 0 auto;
+}
+#table-div {
+    max-width: 400px;
+    margin: 3em auto;
+}
+		</style>
+	</head>
+	<body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/tn/tn-all.js"></script>
+<div id="container"></div>
+</div>
+<script type="text/javascript">
+// Load the data from the HTML table and tag it with an upper case name used for joining
+var data = [
+                    { 'hasc': 'TN.MN', 'name_ar':'Ø£Ø±ÙŠØ§Ù†Ø©', 'name_ville': 'Ariana', value: 1 , code_js: 'Tunis'}, //ariana
+                    { 'hasc': 'TN.SF', 'name_ar':'ØµÙØ§Ù‚Ø³', 'name_ville': 'Sfax', value: 1 , code_js: 'TN_SF'}, //sfax
+                    { 'hasc': 'TN.ME', 'name_ar':'Ù…Ø¯Ù†ÙŠÙ†', 'name_ville': 'Medenine', value: 1 , code_js: 'TN_ME'}, //medenine
+                    { 'hasc': 'TN.TO', 'name_ar':'ØªÙˆØ²Ø±', 'name_ville': 'Tozeur', value: 1 , code_js: 'TN_TO'}, //tozeur
+                    { 'hasc': 'TN.AR', 'name_ar':'Ù…Ù†ÙˆØ¨Ø©', 'name_ville': 'La Manouba', value: 1 , code_js: 'TN_MN'}, //manouba
+                    { 'hasc': 'TN.BJ', 'name_ar':'Ø¨Ø§Ø¬Ø©', 'name_ville': 'Beja', value: 1 , code_js: 'TN_BJ'}, //beja
+                    { 'hasc': 'TN.BA', 'name_ar':'Ø¨Ù† Ø¹Ø±ÙˆØ³', 'name_ville': 'Ben Arous', value: 1 , code_js: 'Tunis'}, //ben arous
+                    { 'hasc': 'TN.BZ', 'name_ar':'Ø¨Ù†Ø²Ø±Øª', 'name_ville': 'Bizerte', value: 1 , code_js: 'TN_BZ'}, //bizerte
+                    { 'hasc': 'TN.JE', 'name_ar':'Ø¬Ù†Ø¯ÙˆØ¨Ø©', 'name_ville': 'Jendouba', value: 1 , code_js: 'TN_JE'}, //jendouba
+                    { 'hasc': 'TN.NB', 'name_ar':'Ù†Ø§Ø¨Ù„', 'name_ville': 'Nabeul', value: 1 , code_js: 'TN_NB'}, //nabeul
+                    { 'hasc': 'TN.TU', 'name_ar':'ØªÙˆÙ†Ø³', 'name_ville': 'Tunis', value: 1 , code_js: 'Tunis'}, //tunis
+                    { 'hasc': 'TN.KF', 'name_ar':'Ø§Ù„ÙƒØ§Ù', 'name_ville': 'Le Kef', value: 1 , code_js: 'TN_KF'}, //kef
+                    { 'hasc': 'TN.KS', 'name_ar':'Ø§Ù„Ù‚ØµØ±ÙŠÙ†', 'name_ville': 'Kasserine', value: 1 , code_js: 'TN_KS'}, //kasserine
+                    { 'hasc': 'TN.GB', 'name_ar':'Ù‚Ø§Ø¨Ø³', 'name_ville': 'Gabes', value: 1 , code_js: 'TN_GB'}, //gabes
+                    { 'hasc': 'TN.GF', 'name_ar':'Ù‚ÙØµØ©', 'name_ville': 'Gafsa', value: 1 , code_js: 'TN_GF'}, //gafsa
+                    { 'hasc': 'TN.SZ', 'name_ar':'Ø³ÙŠØ¯ÙŠ Ø¨ÙˆØ²ÙŠØ¯', 'name_ville': 'Sidi Bouzid', value: 1 , code_js: 'TN_SZ'}, //sidi bouzid
+                    { 'hasc': 'TN.SL', 'name_ar':'Ø³Ù„ÙŠØ§Ù†Ù€Ù€Ù€Ø©', 'name_ville': 'Siliana', value: 1 , code_js: 'TN_SL'}, //siliana
+                    { 'hasc': 'TN.MH', 'name_ar':'Ø§Ù„Ù…Ù‡Ø¯ÙŠØ©', 'name_ville': 'Mahdia', value: 1 , code_js: 'TN_MH'}, //mahdia
+                    { 'hasc': 'TN.MS', 'name_ar':'Ø§Ù„Ù…Ù†Ø³ØªÙŠØ±', 'name_ville': 'Monastir', value: 1 , code_js: 'TN_MS'}, //monastir
+                    { 'hasc': 'TN.KR', 'name_ar':'Ø§Ù„Ù‚ÙŠØ±ÙˆØ§Ù†', 'name_ville': 'Kairouan', value: 1 , code_js: 'TN_KR'}, //kairouan
+                    { 'hasc': 'TN.SS', 'name_ar':'Ø³ÙˆØ³Ø©', 'name_ville': 'Sousse', value: 1 , code_js: 'TN_SS'}, //sousse
+                    { 'hasc': 'TN.ZA', 'name_ar':'Ø²ØºÙˆØ§Ù†', 'name_ville': 'Zaghouan', value: 1 , code_js: 'TN_ZA'}, //zaghouan
+                    { 'hasc': 'TN.KB', 'name_ar':'Ù‚Ø¨Ù„ÙŠ', 'name_ville': 'Kebili', value: 1 , code_js: 'TN_KB'}, // kebili
+                    { 'hasc': 'TN.TA', 'name_ar':'ØªØ·Ø§ÙˆÙŠÙ†', 'name_ville': 'Tataouine', value: 1 , code_js: 'TN_TA'}]; //tataouine
+// Initiate the chart
+Highcharts.mapChart('container', {
+
+    title: {
+        text: ''
+    },
+     credits: {
+      enabled: false
+  },
+    exporting: { enabled: false },
+    mapNavigation: {
+        enabled: false,
+                        buttonOptions: {
+                            verticalAlign: 'bottom'}
+    },
+    legend: {
+                        enabled : false,
+                    },
+
+    colorAxis: {
+        dataClasses: [{
+                        to: 1,
+                    color:'rgba(255,255,255,0)',
+                    }],
+    },
+plotOptions: {
+                        series: {
+                            cursor: 'pointer',
+                            point: {
+                                events: {
+                                    click: function () {
+                                    window.open("http://www.sedkivoyages.com/user/hotelgav/"+this.code_js);   
+                                    }
+                                }
+                            }
+                        }
+                    },
+    series : [{
+                        
+                        data : data,
+                        borderColor:'#808080',
+                        backgroundColor: null,
+                        borderWidth: 1,
+                        mapData: Highcharts.maps['countries/tn/tn-all'],
+                        joinBy: 'hasc',
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        
+                        states: {
+                select: {
+                            color: '#FFF'
+                        },
+                            hover: {
+                            color:'#EEEEEE',
+                            }
+                        },
+        tooltip: {
+                            headerFormat:'',
+                            pointFormat: '<span class="f32"><span class="flag {point.name_ville}"></span></span>'
+                            + '<span> {point.name_ville} </span><p> '+'<div style="width:15px;"></div>'+'</p>',
+                        },
+                        dataLabels: {
+                            enabled: false,
+                            format: '{point.name_ville}'
+                        }
+                    }]});
+		</script>
+	</body>
+</html>

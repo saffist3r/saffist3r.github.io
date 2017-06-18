@@ -1,0 +1,5 @@
+safwene-ladhari.com [02/Mar/2016:03:47:50 -0500] 40.77.167.33 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+safwene-ladhari.com [02/Mar/2016:05:46:47 -0500] 66.249.64.192 - - "GET /css/font-face.css HTTP/1.0" 200 6966 "http://safwene-ladhari.com/" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [02/Mar/2016:10:48:25 -0500] 66.249.64.18 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [02/Mar/2016:10:48:25 -0500] 66.249.64.202 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [02/Mar/2016:13:47:24 -0500] 180.76.15.138 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"

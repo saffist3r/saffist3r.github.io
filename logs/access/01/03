@@ -1,0 +1,2 @@
+safwene-ladhari.com [03/Jan/2016:04:47:15 -0500] 192.168.50.126 - - "GET /fonts/FontAwesome/fontawesome-webfont.woff HTTP/1.0" 304 - "http://safwene-ladhari.com/?ckattempt=2" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+safwene-ladhari.com [03/Jan/2016:06:47:29 -0500] 192.168.50.126 - - "GET /fonts/Matchbook/Matchbook-webfont.woff HTTP/1.0" 304 - "http://safwene-ladhari.com/css/font-face.css" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"

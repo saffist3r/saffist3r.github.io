@@ -1,0 +1,5 @@
+safwene-ladhari.com [01/Jan/2016:01:47:49 -0500] 197.32.119.36 - - "GET /favicon.ico HTTP/1.0" 302 208 "-" "Mozilla/5.0 (Windows NT 6.1; rv:6.0) Gecko/20110814 Firefox/6.0 Google Favicon"
+safwene-ladhari.com [01/Jan/2016:03:48:06 -0500] 180.76.15.17 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+safwene-ladhari.com [01/Jan/2016:06:47:40 -0500] 41.190.14.228 - - "GET /favicon.ico HTTP/1.0" 302 208 "-" "Mozilla/5.0 (Windows NT 6.1; rv:6.0) Gecko/20110814 Firefox/6.0 Google Favicon"
+safwene-ladhari.com [01/Jan/2016:12:46:59 -0500] 66.249.66.140 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [01/Jan/2016:15:47:55 -0500] 180.76.15.136 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"

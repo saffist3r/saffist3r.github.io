@@ -1,0 +1,8 @@
+safwene-ladhari.com [09/Mar/2016:01:46:45 -0500] 66.249.66.128 - - "GET /post.html HTTP/1.0" 200 7623 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [09/Mar/2016:02:46:37 -0500] 66.249.66.132 - - "GET /css/font-awesome.css HTTP/1.0" 200 14605 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [09/Mar/2016:10:46:31 -0500] 180.76.15.154 - - "GET / HTTP/1.0" 304 - "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+safwene-ladhari.com [09/Mar/2016:10:47:49 -0500] 66.249.66.136 - - "GET /css/main.css HTTP/1.0" 200 14962 "http://safwene-ladhari.com/" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+safwene-ladhari.com [09/Mar/2016:19:47:37 -0500] 157.55.39.209 - - "GET /robots.txt HTTP/1.0" 302 208 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+safwene-ladhari.com [09/Mar/2016:19:47:37 -0500] 157.55.39.209 - - "GET /robots.txt HTTP/1.0" 302 208 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+safwene-ladhari.com [09/Mar/2016:19:48:04 -0500] 157.55.39.209 - - "GET / HTTP/1.0" 200 6224 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+safwene-ladhari.com [09/Mar/2016:21:46:23 -0500] 66.249.66.25 - - "GET /js/plugins.js HTTP/1.0" 200 12408 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"

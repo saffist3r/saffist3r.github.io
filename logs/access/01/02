@@ -1,0 +1,3 @@
+safwene-ladhari.com [02/Jan/2016:15:47:07 -0500] 41.225.123.148 - - "GET /js/plugins.js HTTP/1.0" 200 12408 "http://safwene-ladhari.com/?ckattempt=1" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+safwene-ladhari.com [02/Jan/2016:15:47:27 -0500] 180.76.15.135 - - "GET /css/color-schemes/dark/hot-pink.css HTTP/1.0" 200 3670 "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
+safwene-ladhari.com [02/Jan/2016:19:46:48 -0500] 41.225.123.148 - - "GET /favicon.ico HTTP/1.0" 302 208 "http://safwene-ladhari.com/?ckattempt=1" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
